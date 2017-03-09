@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app"></div>
+	<script src="react-0.14.7/build/react.js"></script>
+	<script src="react-0.14.7/build/react-dom.js"></script>
+	<script src="react-0.14.7/browser.js"></script>
+
+	<script type="text/babel">
+		var Messagebox = React.createClass({<!-- 组件名称首字母必须大写 !-->
+			render : function(){
+				return (
+					<div>
+						<h1>hhhhhhh</h1>
+						<h2>2222222</h2>
+						<SubMessageBox/>
+					</div>
+					<!-- 组件必须暴露一个标签 -->
+				);
+			}
+		});
+		var SubMessageBox = React.createClass({
+			render : function(){
+				return (
+					<div>SubMessageBox</div>
+				);
+			}
+		});
+
+		ReactDOM.render(
+			<div>
+				<Messagebox/>
+			</div>,
+			document.getElementById('app')
+		);
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
